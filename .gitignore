@@ -1,0 +1,12 @@
+# IDE
+.idea/
+*.iml
+
+# Claude Code
+.claude/
+CLAUDE.md
+
+# Java
+*.class
+hs_err_pid*
+replay_pid*
