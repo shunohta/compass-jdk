@@ -25,7 +25,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/ClassIdentityDemo.java
+ * java src/main/java/classloader/ClassIdentityDemo.java
  * }</pre>
  *
  * @author jdk-core

@@ -49,7 +49,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/CodeCacheExplorer.java
+ * java src/main/java/memory/CodeCacheExplorer.java
  * }</pre>
  *
  * @author jdk-core

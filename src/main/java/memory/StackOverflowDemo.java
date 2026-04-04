@@ -21,10 +21,10 @@
  * <h2>実行方法</h2>
  * <pre>{@code
  * # デフォルトのスタックサイズで実行
- * java src/main/java/StackOverflowDemo.java
+ * java src/main/java/memory/StackOverflowDemo.java
  *
  * # スタックサイズを 256KB に制限して、早くオーバーフローさせる
- * java -Xss256k src/main/java/StackOverflowDemo.java
+ * java -Xss256k src/main/java/memory/StackOverflowDemo.java
  * }</pre>
  *
  * @author jdk-core

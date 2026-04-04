@@ -30,7 +30,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/StackFrameVisualizer.java
+ * java src/main/java/memory/StackFrameVisualizer.java
  * }</pre>
  *
  * @author jdk-core

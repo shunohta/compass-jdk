@@ -31,7 +31,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/MemoryExplorer.java
+ * java src/main/java/memory/MemoryExplorer.java
  * }</pre>
  *
  * @author jdk-core

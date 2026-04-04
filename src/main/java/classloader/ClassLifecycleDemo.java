@@ -24,7 +24,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/ClassLifecycleDemo.java
+ * java src/main/java/classloader/ClassLifecycleDemo.java
  * }</pre>
  *
  * @author jdk-core

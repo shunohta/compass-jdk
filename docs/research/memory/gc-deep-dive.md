@@ -1618,11 +1618,11 @@ GC ディープダイブ -- 知識マップ
 
 | ファイル | 内容 | 実行方法 |
 |---------|------|---------|
-| [`GcLifecycleDemo.java`](../../src/main/java/GcLifecycleDemo.java) | オブジェクトの一生（Eden → Survivor → Old → 回収）を WeakReference で観察 | `java -Xmx128m -Xms128m -Xmn64m -XX:+UseG1GC -Xlog:gc*,gc+age=debug src/main/java/GcLifecycleDemo.java` |
-| [`GcRootsDemo.java`](../../src/main/java/GcRootsDemo.java) | GC Roots（ローカル変数・static・スレッド参照）の仕組みを PhantomReference で検証 | `java -Xmx64m -XX:+UseG1GC -Xlog:gc* src/main/java/GcRootsDemo.java` |
-| [`OomScenarios.java`](../../src/main/java/OomScenarios.java) | ヒープ枯渇・GC オーバーヘッド超過・スタックオーバーフローの 3 シナリオを再現 | `java -Xmx32m -Xlog:gc* src/main/java/OomScenarios.java` |
-| [`GcLogAnalyzer.java`](../../src/main/java/GcLogAnalyzer.java) | GarbageCollectorMXBean で GC 通知を購読し、リアルタイムで GC イベントを表形式表示 | `java -Xmx128m -Xms128m -XX:+UseG1GC src/main/java/GcLogAnalyzer.java` |
-| [`MemoryLiveReporter.java`](../../src/main/java/MemoryLiveReporter.java) | 5 フェーズのメモリ負荷を生成しながら、ヒープ使用量と GC をバーグラフでリアルタイム実況 | `java -Xmx128m -Xms128m src/main/java/MemoryLiveReporter.java` |
+| [`GcLifecycleDemo.java`](../../../src/main/java/gc/GcLifecycleDemo.java) | オブジェクトの一生（Eden → Survivor → Old → 回収）を WeakReference で観察 | `java -Xmx128m -Xms128m -Xmn64m -XX:+UseG1GC -Xlog:gc*,gc+age=debug src/main/java/gc/GcLifecycleDemo.java` |
+| [`GcRootsDemo.java`](../../../src/main/java/gc/GcRootsDemo.java) | GC Roots（ローカル変数・static・スレッド参照）の仕組みを PhantomReference で検証 | `java -Xmx64m -XX:+UseG1GC -Xlog:gc* src/main/java/gc/GcRootsDemo.java` |
+| [`OomScenarios.java`](../../../src/main/java/gc/OomScenarios.java) | ヒープ枯渇・GC オーバーヘッド超過・スタックオーバーフローの 3 シナリオを再現 | `java -Xmx32m -Xlog:gc* src/main/java/gc/OomScenarios.java` |
+| [`GcLogAnalyzer.java`](../../../src/main/java/gc/GcLogAnalyzer.java) | GarbageCollectorMXBean で GC 通知を購読し、リアルタイムで GC イベントを表形式表示 | `java -Xmx128m -Xms128m -XX:+UseG1GC src/main/java/gc/GcLogAnalyzer.java` |
+| [`MemoryLiveReporter.java`](../../../src/main/java/gc/MemoryLiveReporter.java) | 5 フェーズのメモリ負荷を生成しながら、ヒープ使用量と GC をバーグラフでリアルタイム実況 | `java -Xmx128m -Xms128m src/main/java/gc/MemoryLiveReporter.java` |
 
 #### GcLifecycleDemo -- オブジェクトの一生を観察
 

@@ -24,7 +24,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/ClassLoaderExplorer.java
+ * java src/main/java/classloader/ClassLoaderExplorer.java
  * }</pre>
  *
  * @author jdk-core

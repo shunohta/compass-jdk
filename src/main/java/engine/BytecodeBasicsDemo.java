@@ -23,13 +23,13 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/BytecodeBasicsDemo.java
+ * java src/main/java/engine/BytecodeBasicsDemo.java
  * }</pre>
  *
  * <h2>javap で本プログラム自身のバイトコードを確認する方法</h2>
  * <pre>{@code
  * # コンパイルして javap で逆アセンブル
- * javac -d /tmp src/main/java/BytecodeBasicsDemo.java
+ * javac -d /tmp src/main/java/engine/BytecodeBasicsDemo.java
  * javap -c -p /tmp/BytecodeBasicsDemo.class
  * }</pre>
  *
@@ -346,7 +346,7 @@ void simulation4_JavapReading() {
       javap -v で定数プール、フラグ、スタックマップテーブル等の詳細情報も表示。
 
       ★ 実践: 本プログラム自身のバイトコードを確認してみよう:
-         javac -d /tmp src/main/java/BytecodeBasicsDemo.java
+         javac -d /tmp src/main/java/engine/BytecodeBasicsDemo.java
          javap -c -p /tmp/BytecodeBasicsDemo.class
     """);
 }

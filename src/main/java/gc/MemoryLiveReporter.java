@@ -24,7 +24,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java -Xmx128m -Xms128m src/main/java/MemoryLiveReporter.java
+ * java -Xmx128m -Xms128m src/main/java/gc/MemoryLiveReporter.java
  * }</pre>
  *
  * @author jdk-core

@@ -1,6 +1,3 @@
-import java.lang.management.GarbageCollectorMXBean;
-import java.lang.management.ManagementFactory;
-
 /**
  * Tiered Compilation のウォームアップ過程を計測し、
  * インタプリタ → C1 → C2 の性能変化を観察するプログラム。
@@ -32,21 +29,24 @@ import java.lang.management.ManagementFactory;
  * <h2>実行方法</h2>
  * <pre>{@code
  * # 基本実行
- * java src/main/java/JitWarmupDemo.java
+ * java src/main/java/engine/JitWarmupDemo.java
  *
  * # JIT コンパイルの過程を表示
- * java -XX:+PrintCompilation src/main/java/JitWarmupDemo.java
+ * java -XX:+PrintCompilation src/main/java/engine/JitWarmupDemo.java
  *
  * # インタプリタのみ（JIT 無効）で比較
- * java -Xint src/main/java/JitWarmupDemo.java
+ * java -Xint src/main/java/engine/JitWarmupDemo.java
  *
  * # C1 のみ（C2 無効）で比較
- * java -XX:TieredStopAtLevel=1 src/main/java/JitWarmupDemo.java
+ * java -XX:TieredStopAtLevel=1 src/main/java/engine/JitWarmupDemo.java
  * }</pre>
  *
  * @author jdk-core
  * @see java.lang.management.CompilationMXBean
  */
+
+import java.lang.management.GarbageCollectorMXBean;
+import java.lang.management.ManagementFactory;
 
 // ──────────────────────────────────────────────
 // 定数定義
@@ -272,7 +272,7 @@ void experiment3_EscapeAnalysis() {
 
     IO.println();
     IO.println("  ★ エスケープ解析の効果を確認する方法:");
-    IO.println("    java -XX:-DoEscapeAnalysis src/main/java/JitWarmupDemo.java");
+    IO.println("    java -XX:-DoEscapeAnalysis src/main/java/engine/JitWarmupDemo.java");
     IO.println("    → エスケープ解析を無効にすると GC 回数が増える\n");
 }
 

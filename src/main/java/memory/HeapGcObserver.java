@@ -23,10 +23,10 @@
  * <h2>実行方法</h2>
  * <pre>{@code
  * # ヒープを 64MB に制限し、GC ログを表示して実行
- * java -Xmx64m -verbose:gc src/main/java/HeapGcObserver.java
+ * java -Xmx64m -verbose:gc src/main/java/memory/HeapGcObserver.java
  *
  * # ヒープを 256MB にすれば、より多くの反復が成功する
- * java -Xmx256m -verbose:gc src/main/java/HeapGcObserver.java
+ * java -Xmx256m -verbose:gc src/main/java/memory/HeapGcObserver.java
  * }</pre>
  *
  * @author jdk-core

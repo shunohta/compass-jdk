@@ -16,16 +16,24 @@
  *   <li><b>スタックオーバーフロー</b>: 無限再帰でスタックフレームを枯渇させる</li>
  * </ul>
  *
+ * <h2>学べること</h2>
+ * <ul>
+ *   <li>OutOfMemoryError の各種パターン（ヒープ枯渇・GC オーバーヘッド超過）とその発生メカニズム</li>
+ *   <li>GC オーバーヘッド超過の仕組み -- GC が頻発するが回収量が極端に少ない状態</li>
+ *   <li>StackOverflowError と再帰の関係 -- スタックフレームの積み上がりによる枯渇</li>
+ *   <li>エラー発生時の対処法の基本的な考え方（ヒープサイズ調整、メモリリーク調査、再帰の見直し等）</li>
+ * </ul>
+ *
  * <h2>実行方法</h2>
  * <pre>{@code
  * # ヒープ枯渇シナリオ（少ないヒープで実行）
- * java -Xmx32m -Xlog:gc* src/main/java/OomScenarios.java
+ * java -Xmx32m -Xlog:gc* src/main/java/gc/OomScenarios.java
  *
  * # GC オーバーヘッドシナリオ（とても小さいヒープで実行）
- * java -Xmx16m -Xlog:gc* src/main/java/OomScenarios.java
+ * java -Xmx16m -Xlog:gc* src/main/java/gc/OomScenarios.java
  *
  * # スタックオーバーフローシナリオ（小さいスタックで実行）
- * java -Xss256k src/main/java/OomScenarios.java
+ * java -Xss256k src/main/java/gc/OomScenarios.java
  * }</pre>
  *
  * @author jdk-core

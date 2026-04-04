@@ -34,7 +34,7 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/MetaspaceExplorer.java
+ * java src/main/java/memory/MetaspaceExplorer.java
  * }</pre>
  *
  * @author jdk-core

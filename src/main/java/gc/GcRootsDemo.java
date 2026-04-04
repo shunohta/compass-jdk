@@ -19,10 +19,18 @@
  * エンキューされることで、回収を検出できる。WeakReference より厳密な
  * 回収検出が可能であり、{@link java.lang.ref.Cleaner} の内部実装にも使われている。
  *
+ * <h2>学べること</h2>
+ * <ul>
+ *   <li>GC Roots の3つの種類（ローカル変数、static フィールド、スレッド参照）の違いと役割</li>
+ *   <li>{@link java.lang.ref.PhantomReference} による回収タイミングの正確な検出方法</li>
+ *   <li>到達可能性解析（Reachability Analysis）の仕組み -- GC Root から辿れるかどうかが生死を決める</li>
+ *   <li>参照の切断（{@code null} 代入）によるオブジェクトの GC 対象化</li>
+ * </ul>
+ *
  * <h2>実行方法</h2>
  * <pre>{@code
  * java -Xmx64m -XX:+UseG1GC -Xlog:gc* \
- *       src/main/java/GcRootsDemo.java
+ *       src/main/java/gc/GcRootsDemo.java
  * }</pre>
  *
  * @author jdk-core

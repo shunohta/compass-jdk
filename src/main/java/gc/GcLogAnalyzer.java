@@ -16,7 +16,7 @@
  * <h2>実行方法</h2>
  * <pre>{@code
  * java -Xmx128m -Xms128m -XX:+UseG1GC \
- *       src/main/java/GcLogAnalyzer.java
+ *       src/main/java/gc/GcLogAnalyzer.java
  * }</pre>
  *
  * @author jdk-core

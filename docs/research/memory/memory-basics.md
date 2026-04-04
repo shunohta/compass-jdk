@@ -953,13 +953,13 @@ java -Xss512k -Xms1g -Xmx2g -jar myapp.jar
 
 | ファイル | 内容 | 実行方法 |
 |---------|------|---------|
-| [`MemoryExplorer.java`](../../src/main/java/MemoryExplorer.java) | スタックとヒープの ASCII アート可視化 | `java src/main/java/MemoryExplorer.java` |
-| [`StackFrameVisualizer.java`](../../src/main/java/StackFrameVisualizer.java) | スタックフレームの積み上がりを可視化 | `java src/main/java/StackFrameVisualizer.java` |
-| [`StackOverflowDemo.java`](../../src/main/java/StackOverflowDemo.java) | StackOverflowError の発生実験 | `java -Xss256k src/main/java/StackOverflowDemo.java` |
-| [`HeapGcObserver.java`](../../src/main/java/HeapGcObserver.java) | ヒープ枯渇と GC の観察 | `java -Xmx64m -verbose:gc src/main/java/HeapGcObserver.java` |
-| [`MemoryDiagnostics.java`](../../src/main/java/MemoryDiagnostics.java) | JVM メモリ診断ユーティリティ | `java src/main/java/MemoryDiagnostics.java` |
-| [`MetaspaceExplorer.java`](../../src/main/java/MetaspaceExplorer.java) | Metaspace の使用状況とクラスローディング情報を表示 | `java src/main/java/MetaspaceExplorer.java` |
-| [`CodeCacheExplorer.java`](../../src/main/java/CodeCacheExplorer.java) | Code Cache の 3 セグメント構造と JIT コンパイラ情報を表示 | `java src/main/java/CodeCacheExplorer.java` |
+| [`MemoryExplorer.java`](../../../src/main/java/memory/MemoryExplorer.java) | スタックとヒープの ASCII アート可視化 | `java src/main/java/memory/MemoryExplorer.java` |
+| [`StackFrameVisualizer.java`](../../../src/main/java/memory/StackFrameVisualizer.java) | スタックフレームの積み上がりを可視化 | `java src/main/java/memory/StackFrameVisualizer.java` |
+| [`StackOverflowDemo.java`](../../../src/main/java/memory/StackOverflowDemo.java) | StackOverflowError の発生実験 | `java -Xss256k src/main/java/memory/StackOverflowDemo.java` |
+| [`HeapGcObserver.java`](../../../src/main/java/memory/HeapGcObserver.java) | ヒープ枯渇と GC の観察 | `java -Xmx64m -verbose:gc src/main/java/memory/HeapGcObserver.java` |
+| [`MemoryDiagnostics.java`](../../../src/main/java/memory/MemoryDiagnostics.java) | JVM メモリ診断ユーティリティ | `java src/main/java/memory/MemoryDiagnostics.java` |
+| [`MetaspaceExplorer.java`](../../../src/main/java/memory/MetaspaceExplorer.java) | Metaspace の使用状況とクラスローディング情報を表示 | `java src/main/java/memory/MetaspaceExplorer.java` |
+| [`CodeCacheExplorer.java`](../../../src/main/java/memory/CodeCacheExplorer.java) | Code Cache の 3 セグメント構造と JIT コンパイラ情報を表示 | `java src/main/java/memory/CodeCacheExplorer.java` |
 
 ### 4.1 MemoryExplorer -- スタックとヒープの ASCII アート可視化
 

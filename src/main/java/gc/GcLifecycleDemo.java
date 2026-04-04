@@ -16,7 +16,7 @@
  * <h2>実行方法</h2>
  * <pre>{@code
  * java -Xmx128m -Xms128m -Xmn64m -XX:+UseG1GC \
- *       -Xlog:gc*,gc+age=debug src/main/java/GcLifecycleDemo.java
+ *       -Xlog:gc*,gc+age=debug src/main/java/gc/GcLifecycleDemo.java
  * }</pre>
  *
  * @author jdk-core

@@ -25,15 +25,13 @@
  *
  * <h2>実行方法</h2>
  * <pre>{@code
- * java src/main/java/JniExplorer.java
+ * java src/main/java/native/JniExplorer.java
  * }</pre>
  *
  * @author jdk-core
  * @see java.lang.reflect.Modifier#isNative(int)
  */
 
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
 
 /** カテゴリ別の native メソッド集計用レコード。 */
 record NativeMethodStat(String category, String className, int nativeCount, int totalCount) {
